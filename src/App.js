@@ -1,4 +1,4 @@
-  import React from 'react';
+import React from 'react';
 import CharacterCard from './CharacterCard';
 import WordCard from './WordCard';
 import './App.css';
