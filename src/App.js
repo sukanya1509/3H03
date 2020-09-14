@@ -7,8 +7,10 @@ const word = "hello";
 function App() {
   return (
     <div>
-    <WordCard value="hello"/>
-    </div>
+ {
+ Array.from(word).map((c, i) => <CharacterCard value={c} key={i}/>)
+ }
+ </div>
     );
 
 }
