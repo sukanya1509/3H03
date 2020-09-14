@@ -1,5 +1,5 @@
-import React,{Component}from'react'
-import'./App.css';
+import React, { Component } from 'react';
+import './App.css';
 import CharacterCard from'./CharacterCard';
 import _ from 'lodash';
 const prepareStateFromWord = (given_word) => {
@@ -9,11 +9,11 @@ const prepareStateFromWord = (given_word) => {
  word,
  chars,
  attempt: 1,
- guess: '',
+ guess: [],
  completed: false
  }
 }
-export default class wordCard extends Component {
+export default class WordCard extends Component {
     constructor(props){
         super(props);
         this.state = {

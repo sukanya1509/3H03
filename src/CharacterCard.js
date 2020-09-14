@@ -21,9 +21,10 @@ export default class CharacterCard extends Component {
    {this.props.value}
    </div>
  )
- 
+ {
   componentDidUpdate(prevProps)
       if(prevProps.attempt != this.props.attempt)
         this.setState({active: false})
  }
+}
 }
