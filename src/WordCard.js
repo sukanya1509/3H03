@@ -20,7 +20,7 @@ export default class WordCard extends Component {
             attempt: '',
         }
     }
-    ComponentWillMount(){
+    componentWillMount(){
         let data = prepareStateFromWord(this.props.value);
         this.setState({
             word: data.word,
